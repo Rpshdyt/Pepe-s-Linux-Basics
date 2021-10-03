@@ -1,0 +1,3 @@
+run the command below in the terminal (Ctrl+Alt+T)
+
+chmod +x arch.sh && chmod +x debian.sh
