@@ -4,4 +4,4 @@ all you honestly need to get started after your first installation of a linux di
 that's all
 
 Note: you can also install this repo by doing `git clone https://github.com/Rpshdyt/Pepe-s-Linux-Basics.git` (requires git.
-can be installed by doing `sudo apt install git` (debian) or `sudo pacman -S git` (arch)
+can be installed by doing `sudo apt install git` (debian) or `sudo pacman -S git` (arch))
