@@ -1,4 +1,10 @@
 echo "this will -S the following applications: git, VLC, python, pip, wine, htop, vtop, cmatrix, steam, virtualbox, gimp, audacity"
+echo "Do you wish to proceed?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) make install; break;;
+        No ) exit;;
+    esac
 sudo add-pacman-repository multiverse
 sudo pacman -S git
 sudo pacman -S python
@@ -17,3 +23,4 @@ sudo pacman -S nodejs
 sudo pacman -S npm
 sudo pacman -S vtop
 sudo pacman -S vlc
+done
