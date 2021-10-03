@@ -6,21 +6,21 @@ select yn in "Yes" "No"; do
         No ) exit;;
     esac
 sudo add-pacman-repository multiverse
-sudo pacman -S git
-sudo pacman -S python
-sudo pacman -S python-pip
-sudo pacman -S wine
-sudo pacman -S htop
-sudo pacman -S cmatrix
-sudo pacman -S steam
-sudo pacman -S discord
-sudo pacman -S virtualbox
-sudo pacman -S gimp
-sudo pacman -S audacity
-sudo pacman -S ffmpeg
-sudo pacman -S obs-studio-minimal
-sudo pacman -S nodejs
-sudo pacman -S npm
-sudo pacman -S vtop
-sudo pacman -S vlc
+sudo pacman -S git -y
+sudo pacman -S python -y
+sudo pacman -S python-pip -y
+sudo pacman -S wine -y
+sudo pacman -S htop -y
+sudo pacman -S cmatrix -y
+sudo pacman -S steam -y
+sudo pacman -S discord -y
+sudo pacman -S virtualbox -y
+sudo pacman -S gimp -y
+sudo pacman -S audacity -y
+sudo pacman -S ffmpeg -y
+sudo pacman -S obs-studio-minimal -y
+sudo pacman -S nodejs -y
+sudo pacman -S npm -y
+sudo pacman -S vtop -y
+sudo pacman -S vlc -y
 done
