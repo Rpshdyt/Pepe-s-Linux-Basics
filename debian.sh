@@ -5,31 +5,31 @@ select yn in "Yes" "No"; do
         Yes ) make install; break;;
         No ) exit;;
     esac
-sudo add-apt-repository multiverse
-sudo apt install git
-sudo apt install python
-sudo apt install python-pip
-sudo apt install wine
-sudo apt install htop
-sudo apt install cmatrix
+sudo add-apt-repository multiverse -y
+sudo apt install git -y
+sudo apt install python -y
+sudo apt install python-pip -y
+sudo apt install wine -y
+sudo apt install htop -y
+sudo apt install cmatrix -y
 sudo apt update
-sudo apt install steam
+sudo apt install steam -y
 sudo wget https://discord.com/api/download?platform=linux&format=tar.gz
 sudo tar -xvzf discord-0.0.10.tar.gz -C /opt
 sudo ln -sf /opt/Discord/Discord /usr/bin/Discord
 sudo cp -r /opt/Discord/discord.desktop /usr/share/applications
-sudo apt install virtualbox
-sudo apt install gimp
-sudo apt install audacity
-sudo apt install ffmpeg
+sudo apt install virtualbox -y
+sudo apt install gimp -y
+sudo apt install audacity -y
+sudo apt install ffmpeg -y
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt update
-sudo apt install obs-studio
-sudo apt install nodejs
-sudo apt install npm
-sudo npm install -g vtop
-sudo apt install vlc
+sudo apt install obs-studio -y
+sudo apt install nodejs -y
+sudo apt install npm -y
+sudo npm install -g vtop -y
+sudo apt install vlc -y
 sudo add-apt-repository ppa:openshot.developers/ppa
 sudo apt update
-sudo apt install openshot-qt
+sudo apt install openshot-qt -y
 done
