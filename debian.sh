@@ -1,10 +1,6 @@
 echo "this will install the following applications: git, VLC, OpenShot, python, pip, wine, htop, vtop, cmatrix, steam, virtualbox, gimp, audacity"
-echo "Do you wish to install this program?"
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) make install; break;;
-        No ) exit;;
-    esac
+echo "Do you wish to install this program? Ctrl+C to cancel"
+sleep 10s
 sudo add-apt-repository multiverse -y
 sudo apt install git -y
 sudo apt install python -y
