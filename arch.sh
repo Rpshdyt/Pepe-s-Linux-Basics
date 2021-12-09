@@ -1,10 +1,6 @@
 echo "this will -S the following applications: git, VLC, python, pip, wine, htop, vtop, cmatrix, steam, virtualbox, gimp, audacity"
-echo "Do you wish to proceed?"
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) make install; break;;
-        No ) exit;;
-    esac
+echo "Do you wish to proceed? Ctrl+C to cancel"
+sleep 10s
 sudo add-pacman-repository multiverse
 sudo pacman -S git -y
 sudo pacman -S python -y
