@@ -1,4 +1,4 @@
-echo "this will install the following applications: git, VLC, OpenShot, python, pip, wine, htop, vtop, cmatrix, steam, virtualbox, gimp, audacity"
+echo "this will install the following applications: git, VLC, OpenShot, python, pip, wine, htop, vtop, cmatrix, steam, virtualbox, gimp, audacity, spotify and also enables SSH (Secure Shell)"
 echo "Do you wish to install this program? Ctrl+C to cancel"
 sleep 10s
 sudo add-apt-repository multiverse -y
@@ -28,4 +28,9 @@ sudo apt install vlc -y
 sudo add-apt-repository ppa:openshot.developers/ppa
 sudo apt update
 sudo apt install openshot-qt -y
+sudo apt install openssh-server -y
+sudo add-apt-repository ppa:alexlarsson/flatpak
+sudo apt update
+sudo apt install flatpak
+sudo flatpak install flathub com.spotify.Client
 done
