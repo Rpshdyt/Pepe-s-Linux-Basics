@@ -1,4 +1,4 @@
-echo "this will -S the following applications: git, VLC, python, pip, wine, htop, vtop, cmatrix, steam, virtualbox, gimp, audacity"
+echo "this will -S the following applications: git, VLC, python, pip, wine, htop, vtop, cmatrix, steam, virtualbox, gimp, audacity, spotify and will enable an OpenSSH server"
 echo "Do you wish to proceed? Ctrl+C to cancel"
 sleep 10s
 sudo add-pacman-repository multiverse
@@ -19,4 +19,15 @@ sudo pacman -S nodejs -y
 sudo pacman -S npm -y
 sudo pacman -S vtop -y
 sudo pacman -S vlc -y
+sudo pacman -S openssh
+sudo systemctl start sshd
+sudo systemctl enable sshd
+cd Downloads/
+git clone https://aur.archlinux.org/snapd.git
+cd snapd
+makepkg -s -y
+sudo pacman -U snapd-2.30-9-x86_64.pkg.tar.xz -y
+sudo systemctl enable snapd
+sudo systemctl start snapd
+sudo snap install spotify
 done
